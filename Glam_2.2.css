@@ -1,0 +1,17 @@
+#DA {
+    background-color: rgb(200, 162, 200);
+    height: 250px; width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#DB {
+    background-color: #e72d4c;
+    height: 100%; width: 250px;
+    border: 20px dashed #ff0000;
+}
+
+#DC {
+    background-color: #7fffd4;
+    height: 88%; width: 30%;
+}
