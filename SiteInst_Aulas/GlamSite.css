@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: black;
+    font-family: monospace;
 }
 
 .header {
@@ -13,16 +14,14 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    border: 3px solid white;
+    display: flex;
 }
 
 .header .container {
-    display: flex;
     justify-content: space-around;
 }
 
 .title {
-    border: 3px solid red;
     color: aquamarine;
     width: fit-content;
 }
@@ -30,12 +29,12 @@ body {
 .navbar {
     list-style: none;
     color: rgb(235, 160, 117);
-    border: 3px solid green;
     display: flex;
     justify-content: space-evenly;
     width: 50%;
     padding: 0;
     align-items: center;
+    font-size: 18px;
 }
 
 .destaque {
@@ -45,11 +44,45 @@ body {
 /* Fim do Cabeçalho 
 Começo do Banner*/
 
-.banner {
-    border: 3px dashed #ffffff;
+.banner{
+    display: flex;
+    background-image: url("imgs/bg-jelly-fish-para-home.png");
+    height: 500px;
+    color: #ffffff; 
 }
 
 .banner .container {
-    background-image: url("https://raw.githubusercontent.com/julialima1999/Aula_HTML_CSS/main/imgs/bg-jelly-fish-para-home.png");
+    justify-content: center;
+    width: 10%;
+    font-size: 25px;
 }
 
+#bannertxt {
+    font-size: larger;
+
+}
+
+.banner .container p span {
+    font-weight: bolder;
+}
+
+/* Fim do Banner
+Começo do Social*/
+
+.social {
+    background-color: azure;
+    display: flex;
+}
+
+.social .caixa {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.social .caixa .box {
+    width: 20%;
+}
+
+.social .caixa .box img{
+    height: 200px;
+}
