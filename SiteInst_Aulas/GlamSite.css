@@ -116,7 +116,7 @@ Começo do Footer */
 /* Fim do Footer
 Começo do Card*/
 
-.banner .card {
+#login_card{
     background-color: beige; color: palevioletred;
     height: 400px; width: 400px;
     display: flex;
@@ -161,4 +161,22 @@ Começo do Cadastro */
     font-family: monospace; font-weight: bold; font-size: 20px;
     border: 0; border-radius: 4%;
     cursor: pointer;
+}
+
+#register_card {
+    background-color: beige; color: palevioletred;
+    height: 450px; width: 700px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 13px;
+}
+
+#register_card div {
+    width: 45%;
+    display: flex;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    flex-direction: column;
 }
