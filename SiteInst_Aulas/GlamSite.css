@@ -134,7 +134,7 @@ Começo do Card*/
     font-size: 18px;
 }
 
-#login_b {
+.banner .container #login_card button {
     background-color: palevioletred; color: #ffffff;
     margin-top: 20px;
     height: 35px; width: 80px;
@@ -153,7 +153,7 @@ Começo do Card*/
 /* Fim do Login
 Começo do Cadastro */
 
-#register_b {
+.banner .container #register_card button {
     background-color: palevioletred; color: #ffffff;
     margin-top: 20px;
     height: 35px; width: 160px;
