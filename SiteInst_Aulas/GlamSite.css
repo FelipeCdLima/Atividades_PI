@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.header {
+    border-bottom: 3px solid aquamarine;
+    background-color: rgb(1, 1, 29);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: 3px solid white;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    border: 3px solid red;
+    color: aquamarine;
+    width: fit-content;
+}
+
+.navbar {
+    list-style: none;
+    color: rgb(235, 160, 117);
+    border: 3px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    padding: 0;
+    align-items: center;
+}
+
+.destaque {
+    color: aquamarine;
+}
+
+/* Fim do Cabeçalho 
+Começo do Banner*/
+
+.banner {
+    border: 3px dashed #ffffff;
+}
+
+.banner .container {
+    background-image: url("https://raw.githubusercontent.com/julialima1999/Aula_HTML_CSS/main/imgs/bg-jelly-fish-para-home.png");
+}
+
