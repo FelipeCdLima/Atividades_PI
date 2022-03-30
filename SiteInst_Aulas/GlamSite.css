@@ -37,8 +37,14 @@ body {
     font-size: 18px;
 }
 
-.destaque {
+a {
+    text-decoration: none;
+    color: rgb(235, 160, 117);
+}
+
+.destaque a {
     color: aquamarine;
+    font-weight: bolder;
 }
 
 /* Fim do Cabeçalho 
@@ -53,8 +59,11 @@ Começo do Banner*/
 
 .banner .container {
     justify-content: center;
-    width: 10%;
     font-size: 25px;
+}
+
+.banner .container p {
+    width: 30%;
 }
 
 #bannertxt {
@@ -76,13 +85,80 @@ Começo do Social*/
 
 .social .caixa {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 .social .caixa .box {
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .social .caixa .box img{
-    height: 200px;
+    width: 100%;
+}
+
+/* Fim do Social
+Começo do Footer */
+
+.footer{
+    background-color: aquamarine; color: #000000;
+    height: 70px;
+    display: flex;
+    font-size: 17px;
+}
+
+.footer .container {
+    justify-content: center;
+}
+
+/* Fim do Footer
+Começo do Card*/
+
+.banner .card {
+    background-color: beige; color: palevioletred;
+    height: 400px; width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+}
+
+.card h2 {
+    font-size: 30px;
+}
+
+.card h4 {
+    font-size: 18px;
+}
+
+#login_b {
+    background-color: palevioletred; color: #ffffff;
+    margin-top: 20px;
+    height: 35px; width: 80px;
+    border-radius: 4%;
+    font-family: monospace; font-weight: bold; font-size: 20px;
+    border: 0; border-radius: 4%;
+    cursor: pointer;
+}
+
+.card input {
+    border: 2px solid palevioletred;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Fim do Login
+Começo do Cadastro */
+
+#register_b {
+    background-color: palevioletred; color: #ffffff;
+    margin-top: 20px;
+    height: 35px; width: 160px;
+    border-radius: 4%;
+    font-family: monospace; font-weight: bold; font-size: 20px;
+    border: 0; border-radius: 4%;
+    cursor: pointer;
 }
