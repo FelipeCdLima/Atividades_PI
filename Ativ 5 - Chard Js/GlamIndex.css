@@ -1,0 +1,55 @@
+body {
+    background-color: #808080;
+}
+
+.header {
+    border-bottom: solid #f0ffff 1vh;
+    background-color: #7fffd4;
+    width: 100%; height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    font-family: monospace;
+    color: #0b025a;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.banner {
+    height: 110vh;
+    background-color: #bcf0df;
+    display: flex;
+    justify-content: right; 
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+.card {
+    height: 60vh; width: 30vw;
+    background-color: #0b025a;
+    border-radius: 4%;
+    align-self: center;
+}
+
+.grafs {
+    height: 90vh; width: 50vw;
+    background-color: #0b025a;
+    border-radius: 4%;
+    align-self: center;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vh ;
+    padding-bottom: 1vh ;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
