@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard Test</title>
+    <link rel="stylesheet" href="GlamIndex.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <p>DashBoard Prototype</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div class="grafs">
+            <div class="cardDiv">
+                <canvas id="myChart"></canvas>
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            Gráficos de Temperatura (em ºC) e Umidade relativa do ar (em %), da plantação de morangos ucranianos da Professora Marise
+        </div>
+    </div>
+</body>
+
+<script>
+    const labels = [
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+    ];
+    const labels2 = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+    ];
+
+    const LineData = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: '#ed2a11',
+            borderColor: '#ed2a11',
+            data: [30, 29, 28, 22, 22, 23],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: '#2d3ded',
+            borderColor: '#2d3ded',
+            data: [80, 82, 80, 85, 80, 83],
+        }
+    ]
+    };
+
+    const BarData = {
+        labels: labels2,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: '#ed2a11',
+            borderColor: '#ed2a11',
+            data: [22, 24, 27, 23, 20, 18],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: '#2d3ded',
+            borderColor: '#2d3ded',
+            data: [90, 89, 93, 87, 88, 82],
+        }
+    ]
+    };
+
+    const LineConfig = {
+        type: 'line',
+        data: LineData,
+        options: {}
+    };
+
+    const BarConfig = {
+        type: 'bar',
+        data: BarData,
+        options: {}
+    };
+</script>
+
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        LineConfig
+    );
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        BarConfig
+    );
+</script>
+
+</html>
